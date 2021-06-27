@@ -1,0 +1,99 @@
+/* ---- Cards --- */
+
+$fondocard: nth($colors, 3) !important;
+$card-bg: $fondocard;
+
+
+.card-img-top {
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+    padding: 1.5rem 0 1.5rem 0;
+    background-color: rgba(0, 0, 0, 0.027);
+    filter: invert(100%) sepia(100%) saturate(46%) hue-rotate(259deg) brightness(102%) contrast(102%);
+    /* filter: invert(66%) sepia(59%) saturate(291%) hue-rotate(351deg) brightness(89%) contrast(89%); */
+}
+
+.card {
+    background-color: $card-bg;
+    color: nth($colors, 8);
+}
+.card-link {
+    text-decoration: none;
+    color: nth($colors, 1);
+    &:hover {
+        color: nth($colors, 9);
+    }
+}
+.conteinerfunciones {
+    margin: 5rem;
+    user-select: none;
+    .separatorfunc {
+        border-bottom: 3px solid red;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        @include fontstylish('Montserrat', x-large, bold, #ffffff);
+        text-align: center;
+        text-shadow: $textshd;
+        margin: 0 0 2rem;
+        color: nth($colors, 9);
+    }
+}
+.herokuicon {
+    max-width: 100%;
+}
+.cardfunciones {
+    width: 43.75rem !important;
+    @include for-size(phone) {
+        width: 90vw !important;
+    }
+    @include for-size(tablet1) {
+        width: 90vw !important;
+    }
+    @include for-size(tablet2) {
+        width: 90vw !important;
+    }
+    @include for-size(desktop1) {
+        width: 43.75rem !important;
+    }
+    @include for-size (desktop2) {
+       width: 43.75rem !important;
+    }
+}
+.card-text {
+    span {
+        color: #ffffff;
+    }
+}
+.deploycard{
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem auto;
+    .deploytitle {
+        color: nth($colors, 9);
+    }
+    @include for-size(phone) {
+        width: 90vw !important;
+    }
+    @include for-size(tablet1) {
+        width: 90vw !important;
+    }
+    @include for-size(tablet2) {
+        width: 90vw !important;
+    }
+    @include for-size(desktop1) {
+        width: 43.75rem !important;
+    }
+    @include for-size (desktop2) {
+       width: 43.75rem !important;
+    }
+    .deploylistlast {
+        background-color: #ffffffe3;
+        span {
+            color: nth($colors, 1);
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}

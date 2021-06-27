@@ -1,0 +1,17 @@
+{
+  "name": "megu-final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./scss/style.scss .css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "sass": "^1.35.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

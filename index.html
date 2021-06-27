@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Encabezados HTTP -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
+    <!-- Description -->
+    <meta name="description"
+        content="Megu es un bot basado en python con el que podrás administrar de manera eficaz tus grupos de Telegram!" />
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="Telegram, Telegram group, telegram administrar, admin, TGX, Telegram bot, python, github, ban group, grupo telegram, source code, group administration, MeguBot, Megu, MeguRobot, Megu bot, Saitama bot, Megubot repo">
+
+    <!-- Title -->
+    <meta property="og:title" content="MeguBot | Manage your Telegram groups!" />
+    <!-- Type -->
+    <meta property="og:type" content="website" />
+    <!-- URL -->
+    <meta property="og:url" content="https://www.megubot.github.com/" />
+    <!-- IMG -->
+    <meta property="og:image" content="https://telegra.ph/file/1b0e89b8aff577a1448eb.png" />
+    <!-- Lang -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="es_419" />
+    <!-- Index -->
+    <meta name="robots" content="index, follow">
+    <!-- Title -->
+    <title>MeguBot - Manage your groups!</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- iconos desde Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="https://telegra.ph/file/ea5a776e64bd39793701d.png" alt="Megu Robot Header">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li> <a href="#intro" title="Inicio">Home</a></li>
+                    <li> <a href="https://github.com/NachABR/MeguRobot" target="_blank" title="Repositorio">GitHub</a>
+                    </li>
+                    <li> <a href="#deployvid" title="Deploy en Heroku">Deploying</a></li>
+                    <li> <a href="#condiciones" title="También deberías saber...">Condiciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- svg de waves -->
+    <div class="wavy">
+        <img src="images/wave-top.svg" alt="wavy footer" class="wavytop">
+    </div>
+
+
+    <!-- Sección N°1 | introducción -->
+    <section id="intro">
+        <div>
+            <h1> <span class="meguh1"> Megubot </span> | Administra tus grupos!</h1>
+            <h2> Introducción </h2>
+            <p class="style-paragraph text-center" data-aos="fade-down">Megu es un bot de Telegram modular, con temática
+                anime,
+                basado en Python y con base de datos sqlalchemy.<br>
+                Sirve para administrar tus grupos de la manera más efectiva y divertida! <br>
+                El bot está en constante desarrollo, lo que permite una gran fluidez, funciones actualizadas y soporte
+                por parte del staff. <br>
+
+                El código fuente de Megu es 𝚘𝚙𝚎𝚗-𝚜𝚘𝚞𝚛𝚌𝚎, lo que significa que podrás chequearlo en la repo
+                oficial alojada en <a href="https://github.com/NachABR/MeguRobot" target="_blank">GitHub</a>.</p>
+        </div>
+    </section>
+
+    <!-- Sección N°2 | Desarrollo / Explicación-->
+    <!--    <section id="explanation">
+        <p class="style-paragraph text-center" data-aos="fade-down">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Aut
+            minus vero fugiat at ducimus sint quisquam eos quaerat, in dolore perspiciatis nostrum, optio doloremque! Ad
+            laudantium facere illum expedita quisquam perferendis iure corporis, autem eius impedit eligendi dignissimos
+            repellat hic praesentium iste ea rem nulla explicabo? Assumenda architecto exercitationem, alias autem,
+            provident esse officia tempore itaque facere aperiam pariatur ex mollitia odio nisi fuga obcaecati
+            distinctio quod. Natus recusandae quae aut consequuntur deserunt eos. Tempora, suscipit? Nisi nesciunt sit
+            non magnam laboriosam mollitia doloremque corrupti, facere voluptas quis aperiam earum nam sapiente rerum
+            cum pariatur suscipit quae repudiandae exercitationem repellat veniam ipsam. Id molestiae eveniet
+            possimus.<br>
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut minus vero fugiat at ducimus sint quisquam eos
+            quaerat, in dolore perspiciatis nostrum, optio doloremque! Ad laudantium facere illum expedita quisquam
+            perferendis iure corporis, autem eius impedit eligendi dignissimos repellat hic praesentium iste ea rem
+            nulla explicabo? Assumenda architecto exercitationem, alias autem, provident esse officia tempore itaque
+            facere aperiam pariatur ex mollitia odio nisi fuga obcaecati distinctio quod. Natus recusandae quae aut
+            consequuntur deserunt eos. Tempora, suscipit? Nisi nesciunt sit non magnam laboriosam mollitia doloremque
+            corrupti, facere voluptas quis aperiam earum nam sapiente rerum cum pariatur suscipit quae repudiandae
+            exercitationem repellat veniam ipsam. Id molestiae eveniet possimus.</p>
+
+        <p class="style-paragraph" data-aos="fade-down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+            minus vero fugiat at ducimus sint quisquam eos quaerat, in dolore perspiciatis nostrum, optio doloremque! Ad
+            laudantium facere illum expedita quisquam perferendis iure corporis, autem eius impedit eligendi dignissimos
+            repellat hic praesentium iste ea rem nulla explicabo? Assumenda architecto exercitationem, alias autem,
+            provident esse officia tempore itaque facere aperiam pariatur ex mollitia odio nisi fuga obcaecati
+            distinctio quod. Natus recusandae quae aut consequuntur deserunt eos. Tempora, suscipit? Nisi nesciunt sit
+            non magnam laboriosam mollitia doloremque corrupti, facere voluptas quis aperiam earum nam sapiente rerum
+            cum pariatur suscipit quae repudiandae exercitationem repellat veniam ipsam. Id molestiae eveniet possimus.
+        </p>
+    </section> -->
+    <hr class="divider">
+
+    <!-- sección de Funciones -->
+    <section id="funciones">
+        <h2>Funciones</h2>
+
+        <div class="card container text-center cardfunciones" data-aos="fade-down">
+            <div class="card-body">
+                <!--  <h5 class="card-title">Funciones</h5> -->
+                <h6 class="card-subtitle mb-2 text-muted">Características Principales</h6>
+                <p class="card-text">Megu cuenta con varias funciones administrativas, para que
+                    puedas manejar tu grupo
+                    sin complicaciones.
+                    Podrás añadir respuestas personalizadas, triggers, tirar los dados, buscar stickers, crear reglas y
+                    <br>
+                    hasta podrás crear tu propia federación para poder tener un control más efectivo de tus grupos.</p>
+                <a href="http://t.me/CrimsonMeguBot?start=help" class="card-link" title="Mensaje de ayuda en el bot."
+                    target="_blank">
+                    <i class="fa fa-question-circle" aria-hidden="true" data-aos="fade-up"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <div class="conteinerfunciones">
+        <h2>Administración de Grupos</h2>
+        <div class="separatorfunc"></div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 text-center" data-aos="flip-left">
+                    <img src="images/gavel.svg" class="card-img-top"
+                        alt="Megu utiliza los permisos de admin, respetando los ya existentes.">
+                    <div class="card-body">
+                        <h5 class="card-title">Permisos de Admin</h5>
+                        <p class="card-text">Megu utilizará los permisos de administración existentes en tu grupo,
+                            respetando la estructura de administración del mismo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center" data-aos="flip-right">
+                    <img src="images/no-chatting.svg" class="card-img-top" alt="Elimine mensajes ofensivos.">
+                    <div class="card-body">
+                        <h5 class="card-title">Blacklists</h5>
+                        <p class="card-text">Elimine automáticamente los mensajes ofensivos de su grupo. Incluso puede
+                            asignar castigos en función de la gravedad de la palabra utilizada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center" data-aos="flip-left">
+                    <img src="images/logs.svg" class="card-img-top"
+                        alt="Registro de acciones de los administradores en un canal.">
+                    <div class="card-body">
+                        <h5 class="card-title">Log Channels</h5>
+                        <p class="card-text">Mantenga un registro de las acciones que sus administradores realizan con
+                            Megu, junto con los detalles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center" data-aos="flip-right">
+                    <img src="images/keywords.svg" class="card-img-top" alt="Respuestas personalizadas y automáticas.">
+                    <div class="card-body">
+                        <h5 class="card-title">Keywords/Triggers</h5>
+                        <p class="card-text">Se acabaron las respuestas repetidas a las mismas preguntas de siempre.
+                            Ahora puedes responder a palabras determinadas que hayas configurado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center" data-aos="flip-left">
+                    <img src="images/sticky-note.svg" class="card-img-top"
+                        alt="Guarde notas y úselas cuando las necesite.">
+                    <div class="card-body">
+                        <h5 class="card-title">Notas</h5>
+                        <p class="card-text">Guarda información al azar para que pueda ser consultada luego.
+                            Los usuarios pueden acceder a las notas simplemente llamándolas a través de un comando.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center" data-aos="flip-right">
+                    <img src="images/Disabled.svg" class="card-img-top"
+                        alt="Desactiva los comandos para evitar mal uso.">
+                    <div class="card-body">
+                        <h5 class="card-title">Desactiva Comandos</h5>
+                        <p class="card-text">Desactivar ciertos comandos para los usuarios que no son administradores.
+                            Los comandos deshabilitados también pueden ser eliminados automáticamente para ayudar a
+                            mantener su chat ordenado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col container">
+                <div class="card h-100 text-center" data-aos="flip-left">
+                    <img src="images/connections.svg" class="card-img-top" alt="Configuaración del bot en privado.">
+                    <div class="card-body">
+                        <h5 class="card-title">Conecciones</h5>
+                        <p class="card-text">Los ajustes de tu grupo pueden ser configurados directamente en el chat
+                            privado de Megu. Esto te ayudará a mantener el grupo limpio de mensajes de configuaración.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col container">
+                <div class="card h-100 text-center" data-aos="flip-right">
+                    <img src="images/user_approved.svg" class="card-img-top" alt="Añadir usuarios de confianza.">
+                    <div class="card-body">
+                        <h5 class="card-title">Usuarios Aprobados</h5>
+                        <p class="card-text">Permite a los usuarios de confianza, que no son administradores, a enviar
+                            cualquier tipo de contenido, incluso si este contenido está bloqueado para los usuarios
+                            normales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección N°3.1 | Deploy -->
+    <section id="deployvid">
+        <h3>Videotutorial en Inglés</h3>
+        <iframe src="https://www.youtube.com/embed/lhY71xNYNd4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen data-aos="zoom-in-up">
+        </iframe>
+
+        <div class="card deploycard text-center">
+            <div class="card-body">
+                <h5 class="card-title deploytitle">DEPLOY</h5>
+                <p class="card-text">Complete todos los detalles requeridos, como se ejemplifica en el video o según lo
+                    requiera Heroku en el momento de implementar el bot para un correcto funcionamiento del mismo. Las
+                    variables opcionales pueden ser omitidas.
+                    Para corroborar que Megu se esté ejecutando en Heroku, puedes ir a la sección de <span> Logs </span>
+                    o simplemente
+                    abrir un chat privado con tu bot y escribir el comando <code>/start</code>. <br>
+                    Aquí debajo, encontrarás todos los enlaces que vas a necesitar para completar las variables. <br> Haga click en el botón de abajo para ir directamente al deploy.
+                </p>
+                <p><a href="https://heroku.com/deploy?template=https://github.com/NachABR/MeguRobot.git" rel="nofollow"><img src="https://camo.githubusercontent.com/6979881d5a96b7b18a057083bb8aeb87ba35fc279452e29034c1e1c49ade0636/68747470733a2f2f7777772e6865726f6b7563646e2e636f6d2f6465706c6f792f627574746f6e2e737667" alt="Deploy" data-canonical-src="https://www.herokucdn.com/deploy/button.svg" class="herokuicon"></a></p>
+                <ul class="list-group list-group-flush listadeploy">
+                    <li class="list-group-item"><a href="https://my.telegram.org/auth">API_HASH & API_ID</a>
+                        <p>APIs necesarias para crear el bot, consíguelas desde la página de Telegram.</p>
+                    </li>
+                    <li class="list-group-item"><a href="https://www.alphavantage.co/support/#api-key">CASH_API_KEY</a>
+                        <p>API para Cryptomonedas <code>(Opcional)</code></p>
+                    </li>
+                    <li class="list-group-item"><a href="http://t.me/CrimsonMeguBot?start=info">USER ID</a>
+                        <p>Dentro del chat con Megu, escribe <code>/info</code></p>
+                    </li>
+                    <li class="list-group-item"><a href="https://tx.me/showjsonbot">CHANNEL_ID</a>
+                        <p>Reenvía un mensaje al bot y obtén el ID del canal que usarás para el Log</p>
+                    </li>
+                    <li class="list-group-item"><a href="https://tx.me/SpamWatchBot">SW_API</a>
+                        <p>API de SpawmWatch, para evitar spammers en tu grupo.</p>
+                    </li>
+                    <li class="list-group-item"><a href="https://timezonedb.com/api">TIME_API_KEY</a>
+                        <p>Tiempo y Hora</p>
+                    </li>
+                    <li class="list-group-item"><a href="https://tx.me/VTelegraphbot">TELEGRAPH IMG URL</a>
+                        <p>Envía la imagen que usarás para tu bot y copia el enlace generado.</p>
+                    </li>
+                    <li class="list-group-item deploylistlast">
+                        <p class="card-text">La API de <span> IntelliVoid/Lydia </span> puede ser omitida ya que ha sido
+                            <span>descontinuada</span>.</p>
+                    </li>
+            </div>
+        </div>
+
+
+        <div class="testmenucontainer">
+            <!-- start nav -->
+            <nav id="testmenu">
+                <!-- start menu -->
+                <ul>
+                    <li><a href="https://core.telegram.org/bots/api">TG Bot API</a></li>
+                    <li><a href="https://devcenter.heroku.com/categories/deployment">Deployment help</a>
+                        <!-- start menu desplegable -->
+                        <ul>
+                            <li><a href="https://www.adictosaltrabajo.com/2019/12/11/heroku-cli-como-desplegar-una-aplicacion-desde-la-terminal/">Terminal</a></li>
+                            <li><a href="https://sites.google.com/site/practicadesarrollosoft/temario/continuous-deployment/continuous-deployment---heroku">Config.</a></li>
+                            <li><a href="https://devcenter.heroku.com/articles/heroku-cli-commands">Heroku CLI</a></li>
+                        </ul>
+                        <!-- end menu desplegable -->
+                    </li>
+                    <li><a href="https://telegra.ph/api">Telegraph API</a></li>
+                    <li><a href="https://docs.pyrogram.org">Pyrogram</a></li>
+                    <li><a href="https://docs.sqlalchemy.org/en/14/">SQLAlchemy</a></li>
+                </ul>
+                <!-- end menu -->
+            </nav>
+            <!-- end nav -->
+        </div>
+    </section>
+
+
+    <!-- Cómo añadir a Megu -->
+    <!-- Título -->
+    <div class="gallerystart">
+        <h2>¿Cómo añadir <span class="meguh1">Megubot</span>? Aquí!</h2>
+        <!-- Header 2 -->
+        <header class="header2"><img src="images/megu2headerGray2.png" alt="¿Cómo añadir a Megu?"></header>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            delay: 400
+        });
+    </script>
+    </div>
+    <!-- Carrusel de imágenes | Bootstrap -->
+    <div class="carouselsize">
+        <div id="myCarousel" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/MeguScreenshots/megu1.webp" class="d-block w-100"
+                        lt="Desde los ajustes de tu grupo, selecciona 'añadir administrador'. ">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MeguScreenshots/megu2.webp" class="d-block w-100"
+                        alt="Busca a Megu por su alias: @MeguRobot y selecciónala.">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MeguScreenshots/megu3.webp" class="d-block w-100"
+                        alt="Pulsa sobre Megu y haz click en Promover Administrador.">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MeguScreenshots/megu4.webp" class="d-block w-100"
+                        alt="selecciona los permisos que desees, pero para su correcto funcionamiento, marca todos.">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MeguScreenshots/megu5.webp" class="d-block w-100"
+                        alt="Con /settings puedes configurar las distintas opciones.">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Acordeón | Será reemplazo de las listas -->
+    <div class="accordion container" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    #Condiciones de Uso
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <ol>
+                        <li><b>OpenSource:</b><br> Tu código debe ser OpenSource y mencionar/contener el link desde
+                            donde has hecho el fork.</li>
+                        <li><b>License:</b><br> Incumplir con la norma anteriormente mencionada es estar violando la
+                            licencia de código abierto, usted será Gbaneado de la red de grupos sin previo aviso y se le
+                            añadirá a la lista negra de SpamWatch.</li>
+                        <li><b>Scam:</b><br> Está absolutamente prohibida la venta y así también la distribución de éste
+                            código sin las atribuciones correspondientes.</li>
+                        <li><b>Support:</b><br> Si ha decidido hacer un fork por su cuenta, nosotros no brindamos ningún
+                            tipo soporte/ayuda técnica para el mismo, sólo para MeguBot. Ante cualquier problema,
+                            asegúrate de leer el repositorio.</li>
+                        <li><b>Spamming (megu):</b> Evita usar a Megu para difundir mensajes spam, enlaces a sitios
+                            externos poco confiables/pornográficos. Puedes ser reportado y Gbaneado de la red de grupos.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+    <footer>
+        <div class="containerlogo">
+            <a href="https://github.com/NachABR/MeguRobot" target="_blank">
+                <img class="logo" src="images/megupfp.png" alt="Megu Icon">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Waves -->
+    <div class="wavy">
+        <img src="images/wave.svg" alt="wavy footer">
+    </div>
+
+    <!-- Social Media -->
+    <div class="container">
+        <div class="socialbottom">
+            <div class="social-menu">
+                <ul>
+                    <li><a href="t.me/MeguRobot"><i class="fa fa-telegram"></i></a></li>
+                    <li><a href="https://twitter.com/megubot?lang=es"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- script bootstrap -->
+    <!--     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+    <!-- other scripts -->
+
+</body>
+
+</html>

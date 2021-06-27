@@ -1,0 +1,23 @@
+@mixin pad-mar($pad,$mar) {
+    padding: $pad;
+    margin: $mar;
+}
+
+@mixin sizes($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin d($d) {
+    display: $d;
+}
+@mixin d0($d, $m, $p){
+    display: $d;
+    margin: $m;
+    padding: $p;
+}
+
+@mixin dsp0 {
+    margin: 0;
+    padding: 0;
+}

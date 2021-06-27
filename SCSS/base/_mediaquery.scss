@@ -1,0 +1,93 @@
+@mixin for-size($size) {
+  @if $size==phone {
+    @media (max-width: 364px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet1 {
+    @media (min-width: 365px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet2 {
+    @media (min-width: 601px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop1 {
+    @media (min-width: 765px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop2 {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+
+// Query para el testmenu //
+@mixin tmenuquery($size) {
+  @if $size==phone {
+    @media only screen and (max-width: 364px) {
+      width: 90vw;
+    }
+  }
+
+  @else if $size==tablet1 {
+    @media only screen and (min-width: 365px) {
+      width: 90vw;
+    }
+  }
+
+  @else if $size==tablet2 {
+    @media only screen and (min-width: 601px) {
+      width: 90vw;
+    }
+  }
+
+  @else if $size==desktop1 {
+    @media only screen and (min-width: 765px) {
+      width: 700px;
+    }
+  }
+}
+
+@mixin logoquery($size) {
+  @if $size==phone {
+    @media only screen and (max-width: 364px) {
+      display: none;
+    }
+  }
+
+  @else if $size==tablet1 {
+    @media only screen and (min-width: 365px) {
+      display: none;
+    }
+  }
+
+  @else if $size==tablet2 {
+    @media only screen and (min-width: 601px) {
+      display: none;
+    }
+  }
+
+  @else if $size==desktop1 {
+    @media only screen and (min-width: 765px) {
+      display: flex;
+      bottom: -5vw;
+    }
+  }
+
+  @else if $size==desktop2 {
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      transform: translate(-50%, 50%);
+    }
+  }
+}

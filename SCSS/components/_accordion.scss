@@ -1,0 +1,87 @@
+// Customizing //
+$coloracordeon: nth($colors, 3);
+$btnacordeonbg: nth($colors, 6);
+$bordeacordeon: 2px;
+$bordecolor: nth($colors, 1);
+
+// BS 5 Variables //
+$accordion-color: $coloracordeon;
+$accordion-button-bg: $btnacordeonbg;
+$accordion-button-color: nth($colors, 9);
+$accordion-icon-color: $coloracordeon;
+$accordion-button-active-icon: url(../../images/accordion.svg);
+$accordion-border-width: $bordeacordeon;
+$accordion-border-color: $bordecolor !important;
+
+// A C C O R D I O N //
+@mixin accordionlist {
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    color: nth($colors, 8);
+    padding-top: 20px;
+    list-style-image: url("../../images/iconolistas.png");
+}
+
+
+.accordion {
+    margin: 10rem 0 10rem;
+
+    .accordion-button {
+        color: $accordion-button-color;
+        text-align: left;
+        background-color: $accordion-button-bg;
+        outline: none;
+
+        &:not(.collapsed) {
+            color: nth($colors, 1);
+            background-color: $coloracordeon;
+            box-shadow: rgb(0 0 0 / 13%) 0px -1px 0px inset;
+
+            &::after {
+                background-image: $accordion-button-active-icon;
+                transform: rotate(-180deg);
+            }
+        }
+
+        &:focus {
+            z-index: 3;
+            border-color: none;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+
+
+.accordion-body {
+    background: $accordion-color;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px #c60f24 inset;
+    word-break: break-word;
+    overflow: auto;
+
+    ol {
+        list-style: none;
+
+        li {
+            @include accordionlist();
+        }
+    }
+
+    ul {
+        li {
+            @include accordionlist();
+        }
+
+    }
+}
+
+.accordion-item {
+    background-color: nth($colors, 1);
+    border: $accordion-border-width solid $accordion-border-color;
+}

@@ -1,0 +1,75 @@
+@import '../base/bshadow';
+@import '../base/fonts';
+@import '../base/listacolores';
+
+/* Galería */
+.gallerystart {
+    h2 {
+        @include fontstylish('Montserrat', x-large, bold, nth($colors, 9));
+        text-align: center;
+        margin-top: 90px;
+        text-shadow: nth($bshadow, 1);
+
+        .meguh1 {
+            color: nth($colors, 1);
+            letter-spacing: 7px;
+            text-shadow: $textshd;
+        }
+    }
+
+    .header2 {
+
+        @include d(flex);
+        @include pad-mar(0, 3rem auto);
+        width: 55vw;
+        height: 100%;
+        z-index: 100;
+
+        // Phone size //
+        @include for-size(phone) {
+            width: 95vw;
+            height: 100%;
+        }
+
+        @include for-size(tablet1) {
+            width: 90vw;
+            height: 100%;
+        }
+
+        @include for-size(tablet2) {
+            width: 90vw;
+            height: 100%;
+        }
+
+        @include for-size(desktop1) {
+            @include d(flex);
+            @include pad-mar(0, 3rem auto);
+            width: 55vw;
+            height: 100%;
+            z-index: 100;
+        }
+
+        @include for-size(desktop2) {
+            @include d(flex);
+            @include pad-mar(0, 3rem auto);
+            width: 55vw;
+            height: 100%;
+            z-index: 100;
+        }
+    }
+}
+
+/* Carrusel */
+
+.carouselsize {
+    max-width: 60rem;
+    margin: 0 auto;
+    filter: grayscale(1) brightness(0.5);
+    transition: .5s linear;
+
+    &:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+        transition: .5s linear;
+    }
+}

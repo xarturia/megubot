@@ -1,0 +1,30 @@
+$textshd: 0px 7px 5px rgba(0, 0, 0, 0.5);
+
+#intro {
+    h1 {
+        @include pad-mar(0, 100px 0 15px 0);
+        @include fontstylish('Montserrat', 4.5vw, bold, #ffffff);
+        text-align: center;
+        text-shadow: $textshd;
+    }
+
+    .meguh1 {
+        color: nth($colors, 1);
+        letter-spacing: 7px;
+        text-shadow: $textshd;
+    }
+
+    h2 {
+        @include pad-mar(0, 0 0 15px 0);
+        @include fontstylish('Montserrat', 3.5vw, bold, #ffffff);
+        text-align: center;
+        text-shadow: $textshd;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        color: nth($colors, 1)
+    }
+}

@@ -1,0 +1,6 @@
+@mixin fontstylish($fFam, $fSize, $fWeight, $color, ) {
+    font-family: $fFam, sans-serif;
+    font-size: $fSize;
+    font-weight: $fWeight;
+    color: $color;
+}

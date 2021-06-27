@@ -1,0 +1,32 @@
+@import url('../base/_boxmod.scss');
+@import url('../base/_fonts.scss');
+
+header {
+    img {
+        @include pad-mar(0, 0); //padding y margin 0//
+        @include sizes(100%, 100%);
+        transition: 1s;
+        z-index: -1;
+        user-select: none;
+
+        &:hover {
+            transition: 1s;
+            opacity: 0.7;
+        }
+    }
+}
+
+.wavy {
+    @include d(flex);
+    width: 100%;
+    transition: 1s;
+    user-select: none;
+}
+
+img.wavytop {
+    @include d(flex);
+    position: relative;
+    top: -3px;
+    z-index: -1;
+    user-select: none;
+}

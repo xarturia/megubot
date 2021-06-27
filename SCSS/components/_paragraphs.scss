@@ -1,0 +1,21 @@
+@import '../base/boxmod';
+@import '../base/textstyles';
+
+.style-paragraph {
+    @include paragraph('Montserrat', medium, normal, nth($colors, 8), center, block, 0 3vw);
+    margin-bottom: 100px;
+/*     @media only screen and (max-width: 363.9px) {
+        @include paragraph('Montserrat', 4vw, normal, nth($colors, 8), center, block, 0 3vw);
+    margin-bottom: 100px;
+    } */
+}
+
+#funciones {
+    margin: 0 4vw;
+    h2 {
+        @include fontstylish('Montserrat', x-large, bold, #ffffff);
+        text-align: center;
+        text-shadow: $textshd;
+        word-wrap: break-word;
+    }
+}

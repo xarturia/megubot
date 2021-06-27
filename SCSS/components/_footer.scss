@@ -1,0 +1,114 @@
+   @import '../base/bshadow';
+   @import '../base/maps';
+   // Footer //
+   /* - - - - F O O T E R - - - - */
+
+   /* Logo */
+   .footer {
+       padding-bottom: 40px;
+   }
+
+   .logo {
+       // Media query //
+       @include logoquery(phone);
+       @include logoquery(tablet1);
+       @include logoquery(tablet2);
+       @include logoquery(desktop1);
+       @include logoquery(desktop2);
+
+       float: right;
+       position: relative;
+       bottom: -145px;
+       z-index: 100;
+       @include pad-mar(0, 0);
+       width: 64px;
+       height: 64px;
+       box-shadow: nth($bshadow, 1);
+       border-radius: 100%;
+       transition: 1s;
+
+       &:hover {
+           border-radius: 50%;
+           box-shadow: nth($bshadow, 2);
+       }
+   }
+
+   .containerlogo {
+       position: relative;
+       top: 115px;
+       left: -10px;
+       z-index: 100;
+   }
+
+   /* Social Menu */
+   .socialbottom {
+       width: 90vw;
+
+       .social-menu {
+           z-index: 999;
+
+           ul {
+               position: absolute;
+               bottom: auto;
+               left: 50%;
+               transform: translate(-50%, -140%);
+               @include pad-mar(0, 0);
+               @include d(flex);
+               z-index: 999;
+
+               li {
+                   list-style: none;
+                   margin: 0 10px;
+
+                   a {
+                       position: relative;
+                       @include d(block);
+                       width: 50px;
+                       height: 50px;
+                       border-radius: 50%;
+                       background-color: nth($colors, 12);
+                       text-align: center;
+                       transition: .5s;
+                       transform: translate(0, 0px);
+                       box-shadow: nth($bshadow, 1);
+
+                       &:hover {
+                           transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                       }
+
+                       .fa {
+                           color: nth($colors, 1);
+                           font-size: 25px;
+                           line-height: 25px;
+                           line-height: 50px;
+                           transition: .5s;
+
+                           &:hover {
+                               color: nth($colors, 9);
+                           }
+                       }
+                   }
+
+                   &:nth-child(1) a:hover {
+                       background-color: map-get($redes, tg);
+                   }
+
+                   &:nth-child(2) a:hover {
+                       background-color: map-get($redes, tw);
+                   }
+
+                   &:nth-child(3) a:hover {
+                       background-color: map-get($redes, ig);
+                   }
+
+                   &:nth-child(4) a:hover {
+                       background-color: map-get($redes, yt);
+                   }
+
+                   &:nth-child(5) a:hover {
+                       background-color: map-get($redes, lin);
+                   }
+               }
+           }
+       }
+   }

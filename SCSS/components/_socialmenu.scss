@@ -1,0 +1,97 @@
+@import '../base/maps';
+
+/* Social Menu */
+.socialbottom {
+    width: 90vw;
+}
+
+.social-menu {
+    z-index: 999;
+
+    ul {
+        position: absolute;
+        bottom: auto;
+        left: 50%;
+        transform: translate(-50%, -140%);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        z-index: 999;
+
+        li {
+            // íconos de la social media //
+            list-style: none;
+            margin: 0 10px;
+
+            &:nth-child(1) {
+                a {
+                    &:hover {
+                        background-color: map-get($redes, tg);
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                a {
+                    &:hover {
+                        background-color: map-get($redes, tw);
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                a {
+                    &:hover {
+                        background-color: map-get($redes, ig);
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                a {
+                    &:hover {
+                        background-color: map-get($redes, yt);
+                    }
+                }
+            }
+
+            &:nth-child(5) {
+                a {
+                    &:hover {
+                        background-color: map-get($redes, lin);
+                    }
+                }
+            }
+
+            a {
+                position: relative;
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: rgb(36, 32, 32);
+                text-align: center;
+                transition: 0.5s;
+                transform: translate(0, 0px);
+                box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+
+                &:hover {
+                    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                }
+            }
+
+            .fa {
+                color: nth($colors, 1);
+                font-size: 25px;
+                line-height: 50px;
+                transition: .5s;
+
+                &:hover {
+                    color: nth($colors, 9)
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------- */

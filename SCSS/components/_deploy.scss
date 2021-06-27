@@ -1,0 +1,125 @@
+@import '../base/boxmod';
+@import '../base/textstyles';
+@import '../base/mediaquery';
+@import '../base/listacolores';
+
+/* Deploy */
+#deployvid {
+    h3 {
+        @include pad-mar(0, 100px 0 30px 0);
+        @include h3(30px);
+    }
+
+    iframe {
+        @include d0(flex, 0 auto, 0 auto, );
+        transition: 1.5s;
+        width: 850px;
+        height: 478px;
+
+        @include for-size(phone) {
+            width: 90vw;
+            height: 70vw;
+        }
+
+        @include for-size(tablet1) {
+            width: 90vw;
+            height: 70vw;
+        }
+
+        @include for-size(tablet2) {
+            width: 90vw;
+            height: 70vw;
+        }
+
+        @include for-size(desktop1) {
+            width: 90vw;
+            height: 70vw;
+        }
+
+        @include for-size(desktop2) {
+            width: 850px;
+            height: 478px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 0 3px nth($colors, 1);
+        }
+    }
+}
+
+/* Nav con enlaces */
+.testmenucontainer {
+    @include d(flex);
+    position: relative;
+    @include pad-mar(5px 0 0, 3rem auto);
+    width: 700px;
+    justify-content: center;
+    background: nth($colors, 3);
+    box-shadow: 0 5px nth($colors, 1) inset;
+    word-break: break-all;
+
+    // Media query //
+    @include tmenuquery(phone);
+    @include tmenuquery(tablet1);
+    @include tmenuquery(tablet2);
+    @include tmenuquery(desktop1);
+
+    #testmenu {
+        ul {
+            list-style: none;
+            @include d0(flex, 0, 0);
+            justify-content: center;
+
+            a {
+                &:hover {
+                    text-shadow: 0 0 5px nth($colors, 9);
+                    z-index: 100;
+                }
+            }
+
+            li {
+                background-color: nth($colors, 3);
+                position: relative;
+                float: left;
+                @include dsp0();
+
+                &:hover {
+                    background: nth($colors, 1);
+                    transition: 0.6s;
+                }
+
+                &:hover>ul {
+                    display: block;
+                }
+
+                a {
+                    @include paragraph('Montserrat', 15px, 400, nth($colors, 9), center, block, 8px);
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: #eee;
+                    padding: 0;
+
+                    li {
+                        float: none;
+                        width: 150px;
+                    }
+
+                    a {
+                        line-height: 120%;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,28 @@
+@mixin paragraph($fFam, $fSize, $fWeight, $color, $txtal, $d, $p){
+    font-family: $fFam, sans-serif;
+    font-size: $fSize;
+    font-weight: $fWeight;
+    color: $color;
+    text-align: $txtal;
+    display: $d;
+    padding: $p;
+    word-wrap: break-word;
+}
+@mixin h3($mb){
+    margin-top: 100px;
+    margin-bottom: $mb;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+@mixin txtstyle($fFam, $fSize, $fWeight, $color, $txtal, $d, $p){
+    font-family: $fFam, sans-serif;
+    font-size: $fSize;
+    font-weight: $fWeight;
+    color: $color;
+    text-align: $txtal;
+    display: $d;
+    padding: $p;
+}
