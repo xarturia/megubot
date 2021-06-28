@@ -143,13 +143,13 @@ Si no puede tener un archivo config.py (Ej.: en Heroku), también es posible usa
 ### Dependencias de Python
 Instale las dependencias necesarias de Python moviéndose al directorio del proyecto y ejecutando:
 
-```pip3 install -r requirements.txt.```
+```pip3 install -r requirements.txt```.
 
 Esto instalará todos los paquetes python necesarios.
 
 
 ### Base de datos
-Si desea utilizar un módulo dependiente de la base de datos (por ejemplo: bloqueps, notas, userinfo, usuarios, filtros, bienvenidas), necesitará tener una base de datos instalada en su sistema. Yo uso Postgres, así que recomiendo usarlo para una compatibilidad óptima.
+Si desea utilizar un módulo dependiente de la base de datos (por ejemplo: bloqueos, notas, userinfo, usuarios, filtros, bienvenidas), necesitará tener una base de datos instalada en su sistema. Yo uso Postgres, así que recomiendo usarlo para una compatibilidad óptima.
 
 En el caso de Postgres, así es como se configuraría una base de datos en un sistema Debian/ubuntu. Otras distribuciones pueden variar.
 
