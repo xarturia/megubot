@@ -88,7 +88,7 @@ Evita usar a Megu para difundir mensajes spam, enlaces a sitios externos poco co
 * Activa el Dyno de tu worker (no te preocupes, es gratis :D) y Webhook.
 * Ahora envía /start dentro del chat con tu bot. Si no responde, vaya a ```https://dashboard.heroku.com/apps/(app-name)/settings``` y elimine el ```webhook``` y el ```puerto```.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xarturia/megubot.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NachABR/MeguRobot.git)
 
 ### Prerrequisitos
 
