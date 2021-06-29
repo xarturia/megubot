@@ -4,5 +4,6 @@ package-lock.json
 robots.txt
 index - backup.html
 images/megurender.png
-images\MeguScreenshots/meguscr6.webp
-images\MeguScreenshots/meguscr7.webp
+images/MeguScreenshots/meguscr6.webp
+images/MeguScreenshots/meguscr7.webp
+sitemap.xml
