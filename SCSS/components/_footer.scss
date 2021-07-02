@@ -1,5 +1,6 @@
    @import '../base/bshadow';
    @import '../base/maps';
+   @import '../base/mediaquery';
    // Footer //
    /* - - - - F O O T E R - - - - */
 
@@ -15,7 +16,6 @@
        @include logoquery(tablet2);
        @include logoquery(desktop1);
        @include logoquery(desktop2);
-
        float: right;
        position: relative;
        bottom: -145px;
@@ -23,6 +23,7 @@
        @include pad-mar(0, 0);
        width: 64px;
        height: 64px;
+       aspect-ratio: width/height;
        box-shadow: nth($bshadow, 1);
        border-radius: 100%;
        transition: 1s;

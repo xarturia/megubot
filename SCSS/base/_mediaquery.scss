@@ -57,29 +57,37 @@
     }
   }
 }
-
+/* QUERY LOGO */
 @mixin logoquery($size) {
   @if $size==phone {
     @media only screen and (max-width: 364px) {
       display: none;
+      width: 64px;
+      height: 64px;
     }
   }
 
   @else if $size==tablet1 {
     @media only screen and (min-width: 365px) {
       display: none;
+      width: 64px;
+      height: 64px;
     }
   }
 
   @else if $size==tablet2 {
     @media only screen and (min-width: 601px) {
       display: none;
+      width: 64px;
+      height: 64px;
     }
   }
 
   @else if $size==desktop1 {
     @media only screen and (min-width: 765px) {
       display: flex;
+      width: 64px;
+      height: 64px;
       bottom: -5vw;
     }
   }
@@ -87,6 +95,8 @@
   @else if $size==desktop2 {
     @media only screen and (min-width: 1024px) {
       display: flex;
+      width: 64px;
+      height: 64px;
       transform: translate(-50%, 50%);
     }
   }
