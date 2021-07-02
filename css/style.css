@@ -10817,8 +10817,6 @@ header img {
   margin: 0;
   width: 100%;
   height: 100%;
-  width: 1280px;
-  height: 426px;
   aspect-ratio: width/height;
   transition: 1s;
   z-index: -1;
