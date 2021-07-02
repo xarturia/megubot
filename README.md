@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/xarturia/megubot">
-    <img src="images/megupfp.png" alt="Logo" width="80" height="80">
+    <img src="images/megupfp.webp" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Megubot | Telegram management bot</h3>
