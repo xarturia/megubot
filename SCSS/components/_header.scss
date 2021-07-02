@@ -3,7 +3,7 @@
 
 header {
     img {
-        @include pad-mar(0, 0); //padding y margin 0//
+        @include pad-mar(0, 0);
         @include sizes(100%, 100%);
         aspect-ratio: width/height;
         transition: 1s;
