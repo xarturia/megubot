@@ -24,6 +24,9 @@ $accordion-border-color: $bordecolor !important;
 
 
 .accordion {
+    @media only screen and (min-width: 765px){
+        max-width: 60vw !important;
+    }
     margin: 10rem 0 10rem;
 
     .accordion-button {

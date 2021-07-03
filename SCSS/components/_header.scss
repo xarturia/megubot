@@ -1,10 +1,11 @@
-@import url('../base/_boxmod.scss');
-@import url('../base/_fonts.scss');
+@import '../base/_boxmod';
+@import '../base/_fonts';
 
 header {
     img {
         @include pad-mar(0, 0);
-        @include sizes(100%, 100%);
+        width: 100%;
+        height: auto;
         aspect-ratio: width/height;
         transition: 1s;
         z-index: -1;
@@ -19,13 +20,15 @@ header {
 
 .wavy {
     @include d(flex);
-    width: 100%;
+    width: 100vw;
     transition: 1s;
     user-select: none;
 }
 
-img.wavytop {
+.wavytop {
     @include d(flex);
+    width: 100%;
+    height: auto;
     position: relative;
     top: -3px;
     z-index: -1;
