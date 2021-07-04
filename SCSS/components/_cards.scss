@@ -87,6 +87,9 @@ $card-bg: $fondocard;
     @include for-size (desktop2) {
        width: 43.75rem !important;
     }
+    span {
+        color: nth($colors, 1);
+    }
     .deploylistlast {
         background-color: #ffffffe3;
         span {

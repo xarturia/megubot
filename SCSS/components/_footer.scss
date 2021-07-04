@@ -43,7 +43,7 @@
 
    /* Social Menu */
    .socialbottom {
-       width: 90vw;
+       width: 70vw;
 
        .social-menu {
            z-index: 999;
@@ -59,8 +59,12 @@
 
                li {
                    list-style: none;
-                   margin: 0 10px;
-
+                   @include for-size(phone){
+                    margin: -0.2rem 0.5vw;
+                   }
+                   @include for-size(tablet1){
+                    margin: -0.2rem 0.5vw;
+                   }
                    a {
                        position: relative;
                        @include d(block);

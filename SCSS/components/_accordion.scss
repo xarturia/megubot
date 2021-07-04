@@ -30,13 +30,13 @@ $accordion-border-color: $bordecolor !important;
     margin: 10rem 0 10rem;
 
     .accordion-button {
-        color: $accordion-button-color;
+        color: #DBDBDB;
         text-align: left;
         background-color: $accordion-button-bg;
         outline: none;
 
         &:not(.collapsed) {
-            color: nth($colors, 1);
+            color: #DBDBDB;
             background-color: $coloracordeon;
             box-shadow: rgb(0 0 0 / 13%) 0px -1px 0px inset;
 
