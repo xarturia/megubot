@@ -18,20 +18,25 @@ $card-bg: $fondocard;
     background-color: $card-bg;
     color: nth($colors, 8);
 }
+
 .card-link {
     text-decoration: none;
     color: nth($colors, 1);
+
     &:hover {
         color: nth($colors, 9);
     }
 }
+
 .conteinerfunciones {
     margin: 5rem;
     user-select: none;
+
     .separatorfunc {
         border-bottom: 3px solid red;
         margin-bottom: 1rem;
     }
+
     h2 {
         @include fontstylish('Montserrat', x-large, bold, #ffffff);
         text-align: center;
@@ -40,62 +45,81 @@ $card-bg: $fondocard;
         color: nth($colors, 9);
     }
 }
+
 .herokuicon {
     max-width: 100%;
 }
+
 .cardfunciones {
     width: 43.75rem !important;
+
     @include for-size(phone) {
         width: 90vw !important;
     }
+
     @include for-size(tablet1) {
         width: 90vw !important;
     }
+
     @include for-size(tablet2) {
         width: 90vw !important;
     }
+
     @include for-size(desktop1) {
         width: 43.75rem !important;
     }
+
     @include for-size (desktop2) {
-       width: 43.75rem !important;
+        width: 43.75rem !important;
     }
 }
+
 .card-text {
     span {
         color: #ffffff;
     }
 }
-.deploycard{
+
+.deploycard {
     font-family: 'Montserrat', sans-serif;
     margin: 2rem auto;
+
     .deploytitle {
         color: nth($colors, 9);
     }
+
     @include for-size(phone) {
         width: 90vw !important;
     }
+
     @include for-size(tablet1) {
         width: 90vw !important;
     }
+
     @include for-size(tablet2) {
         width: 90vw !important;
     }
+
     @include for-size(desktop1) {
         width: 43.75rem !important;
     }
+
     @include for-size (desktop2) {
-       width: 43.75rem !important;
+        width: 43.75rem !important;
     }
+
     span {
         color: nth($colors, 1);
     }
+
     .deploylistlast {
         background-color: #ffffffe3;
+
         span {
             color: nth($colors, 1);
         }
     }
+
     a {
         text-decoration: none;
     }

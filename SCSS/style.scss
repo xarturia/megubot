@@ -1,74 +1,75 @@
-
-
 // // // // // // // // // // // // // // // //// // // //
- // @import '../node_modules/bootstrap/scss/bootstrap.scss';//
+// @import '../node_modules/bootstrap/scss/bootstrap.scss';//
 // // // // // // // //// // // // // // // //// // // //
 
- @import 'components/scrollbar';
- @import 'base/listacolores';
- @import 'base/maps';
- @import 'components/socialmenu';
- @import 'base/fonts';
- @import 'base/boxmod';
- @import 'components/header';
- @import 'components/navbar';
- @import 'components/intro';
- @import 'components/audio';
- @import 'components/paragraphs';
- @import 'components/deploy';
- @import 'base/mediaquery';
- @import 'components/footer';
- @import 'components/gallery';
- @import 'components/accordion';
- @import 'components/cards';
- @import 'components/_stars';
- /* reseteo */
- * {
-     @include pad-mar(0, 0);
- }
+@import 'components/scrollbar';
+@import 'base/listacolores';
+@import 'base/maps';
+@import 'components/socialmenu';
+@import 'base/fonts';
+@import 'base/boxmod';
+@import 'components/header';
+@import 'components/navbar';
+@import 'components/intro';
+@import 'components/audio';
+@import 'components/paragraphs';
+@import 'components/deploy';
+@import 'base/mediaquery';
+@import 'components/footer';
+@import 'components/gallery';
+@import 'components/accordion';
+@import 'components/cards';
+@import 'components/_stars';
 
- /* Body */
- body {
-     max-width: 100vw;
-     min-height: 100vh;
-     overflow-x: hidden;
-     background: nth($colors, 5);
-     /* fallback for old browsers */
-     background: -webkit-linear-gradient(to bottom, #262626, #111010);
-     /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to bottom, #262626, #111010);
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     background-image: -o-linear-gradient(to bottom, #262626, #111010);
-     /* Opera GX LVL2 (core: 75.0.3969.279+) */
- }
+/* reseteo */
+* {
+    @include pad-mar(0, 0);
+}
+
+/* Body */
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: nth($colors, 5);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #262626, #111010);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #262626, #111010);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: -o-linear-gradient(to bottom, #262626, #111010);
+    /* Opera GX LVL2 (core: 75.0.3969.279+) */
+}
+
 svg {
     opacity: 200%;
 }
- /* html */
- html {
-     scroll-behavior: smooth;
-     max-width: 100vw;
-     font-display: auto;
- }
 
- /* focus */
- :focus {
-     outline: hidden;
- }
+/* html */
+html {
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    font-display: auto;
+}
 
- /* hr / Divisor */
- .divider {
-     height: 3px;
-     border: 2px solid nth($colors, 3);
-     border-radius: 20px;
-     margin: 40px auto;
+/* focus */
+:focus {
+    outline: hidden;
+}
 
-     &:hover {
-         border: 2px solid nth($colors, 1);
-         transition: 0.5s;
-         background-color: nth($colors, 1);
-     }
- }
+/* hr / Divisor */
+.divider {
+    height: 3px;
+    border: 2px solid nth($colors, 3);
+    border-radius: 20px;
+    margin: 40px auto;
+
+    &:hover {
+        border: 2px solid nth($colors, 1);
+        transition: 0.5s;
+        background-color: nth($colors, 1);
+    }
+}
 
 /* code */
 code {
