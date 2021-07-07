@@ -21,6 +21,7 @@
  @import 'components/gallery';
  @import 'components/accordion';
  @import 'components/cards';
+ @import 'components/_stars';
  /* reseteo */
  * {
      @include pad-mar(0, 0);
@@ -29,6 +30,7 @@
  /* Body */
  body {
      max-width: 100vw;
+     min-height: 100vh;
      overflow-x: hidden;
      background: nth($colors, 5);
      /* fallback for old browsers */
@@ -39,7 +41,9 @@
      background-image: -o-linear-gradient(to bottom, #262626, #111010);
      /* Opera GX LVL2 (core: 75.0.3969.279+) */
  }
-
+svg {
+    opacity: 200%;
+}
  /* html */
  html {
      scroll-behavior: smooth;
