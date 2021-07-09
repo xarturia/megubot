@@ -41,4 +41,11 @@ header {
 
 .luxbar-menu {
     background-color: #252525 !important;
+    text-transform: uppercase;
+    z-index: 1;
+    a {
+        &:hover {
+            color: #c60f24;
+        }
+    }
 }

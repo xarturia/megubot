@@ -117,42 +117,11 @@ header img:hover {
 
 .luxbar-menu {
   background-color: #252525 !important;
-}
-
-.menu ul {
-  list-style: none;
-  background: #302c2c;
-  text-align: center;
-  position: relative;
-  top: -4px;
-  padding: 0;
-  margin: 0;
-}
-.menu ul li {
-  display: inline-block;
-  padding: 0 20px 0 20px;
-  margin: 0;
-}
-.menu ul li a {
-  text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
-  width: 135px;
-  display: block;
-  padding: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #ffffff;
-  transition: 1s;
+  z-index: 1;
 }
-.menu ul li a:hover {
-  background: #a60c1e;
-  text-shadow: 0 0 4px #ffffff;
-  transition: 0.5s;
-  z-index: 100;
-  color: #ffffff;
-  box-shadow: 0px 5px 15px 4px rgba(0, 0, 0, 0.62);
+.luxbar-menu a:hover {
+  color: #c60f24;
 }
 
 #intro h1 {
@@ -914,24 +883,6 @@ html {
 /* code */
 code {
   color: #DBDBDB !important;
-}
-
-.pepeh1 {
-  color: #c60f24;
-  font-size: 300;
-  align-items: center;
-  background-color: gray;
-  padding: 0 auto;
-  margin: 0 auto;
-  display: flex;
-}
-
-.pepe1 {
-  height: 300px;
-  width: 600px;
-  background-color: #262626;
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
