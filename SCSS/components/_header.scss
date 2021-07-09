@@ -24,6 +24,7 @@ header {
     width: 100vw;
     transition: 1s;
     user-select: none;
+    
 }
 
 .wavytop {
@@ -32,6 +33,12 @@ header {
     height: auto;
     position: relative;
     top: -3px;
-    z-index: -1;
+    z-index: 1;
     user-select: none;
+    filter: invert(13%) sepia(0%) saturate(0%) hue-rotate(280deg) brightness(96%) contrast(93%);
+    opacity: .8;
+}
+
+.luxbar-menu {
+    background-color: #252525 !important;
 }
