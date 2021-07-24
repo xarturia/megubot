@@ -34,7 +34,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -56,18 +56,21 @@
     <!-- Header -->
     <header>
         <img src="images/meguheader.webp" alt="Megu Robot Header">
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li> <a href="#intro" title="Inicio">Home</a></li>
-                    <li> <a href="https://github.com/NachABR/MeguRobot" target="_blank" rel="noreferrer"
-                            title="Repositorio">GitHub</a>
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <a href="#" class="luxbar-brand">MEGUBOT</a>
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                        id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
                     </li>
-                    <li> <a href="#deployvid" title="Deploy en Heroku">Deploying</a></li>
-                    <li> <a href="#Condiciones" title="También deberías saber...">Condiciones</a></li>
+                    <li class="luxbar-item"><a href="#intro" title="Inicio">Home</a></li>
+                    <li class="luxbar-item"><a href="https://github.com/NachABR/MeguRobot" target="_blank" rel="noreferrer"
+                        title="Repositorio">GitHub</a></li>
+                    <li class="luxbar-item"><a href="#deployvid" title="Deploy en Heroku">Deploying</a></li>
+                    <li class="luxbar-item"><a href="#Condiciones" title="También deberías saber...">Condiciones</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
     </header>
     <!-- svg de waves -->
     <div class="wavy">
@@ -317,7 +320,7 @@
             allowfullscreen loading=lazy>
         </iframe>
         <div class="card deploycard text-center">
-            <div class="card-body">
+            <div class="card-body cuerpocard">
                 <h5 class="card-title deploytitle">DEPLOY</h5>
                 <p class="card-text">Complete todos los detalles requeridos, como se ejemplifica en el video o según lo
                     requiera Heroku en el momento de implementar el bot para un correcto funcionamiento del mismo. Las
@@ -408,7 +411,7 @@
     <!-- Cómo añadir a Megu -->
     <!-- Título -->
     <div class="gallerystart">
-        <h2>¿Cómo añadir <span class="meguh1">Megubot</span>? Aquí!</h2>
+        <h2>¿Cómo añadir <span class="meguh2">Megubot</span>? Aquí!</h2>
         <!-- Header 2 -->
         <header class="header2"><img data-src="images/megu2headerGray2.webp" class="lazyload"
                 alt="¿Cómo añadir a Megu?"></header>
@@ -482,20 +485,21 @@
                     aria-labelledby="panelsStayOpen-headingOne">
                     <div class="accordion-body">
                         <ol>
-                            <li><b>OpenSource:</b><br> Tu código debe ser OpenSource y mencionar/contener el link desde
+                            <li><img src="images/iconolistas.png" alt="icon"><b>OpenSource:</b><br> Tu código debe ser OpenSource y mencionar/contener el link desde
                                 donde has hecho el fork.</li>
-                            <li><b>License:</b><br> Incumplir con la norma anteriormente mencionada es estar violando la
+                            <li><img src="images/iconolistas.png" alt="icon"><b>License:</b><br> Incumplir con la norma anteriormente mencionada es estar violando la
                                 licencia de código abierto, usted será Gbaneado de la red de grupos sin previo aviso y
                                 se le
                                 añadirá a la lista negra de SpamWatch.</li>
-                            <li><b>Scam:</b><br> Está absolutamente prohibida la venta y así también la distribución de
+                            <li><img src="images/iconolistas.png" alt="icon"><b>Scam:</b><br> Está absolutamente prohibida la venta y así también la distribución de
                                 éste
                                 código sin las atribuciones correspondientes.</li>
-                            <li><b>Support:</b><br> Si ha decidido hacer un fork por su cuenta, nosotros no brindamos
+                            <li><img src="images/iconolistas.png" alt="icon"><b>Support:</b><br> Si ha decidido hacer un fork por su cuenta, nosotros no brindamos
                                 ningún
                                 tipo soporte/ayuda técnica para el mismo, sólo para MeguBot. Ante cualquier problema,
                                 asegúrate de leer el repositorio.</li>
-                            <li><b>Spamming (megu):</b> Evita usar a Megu para difundir mensajes spam, enlaces a sitios
+                            <li><img src="images/iconolistas.png" alt="icon"><b>Spamming (megu):</b><br> 
+                                Evita usar a Megu para difundir mensajes spam, enlaces a sitios
                                 externos poco confiables/pornográficos. Puedes ser reportado y Gbaneado de la red de
                                 grupos.
                             </li>

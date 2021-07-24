@@ -109,44 +109,19 @@ header img:hover {
   height: auto;
   position: relative;
   top: -3px;
-  z-index: -1;
+  z-index: 1;
   user-select: none;
+  filter: invert(13%) sepia(0%) saturate(0%) hue-rotate(280deg) brightness(96%) contrast(93%);
+  opacity: 0.8;
 }
 
-.menu ul {
-  list-style: none;
-  background: #302c2c;
-  text-align: center;
-  position: relative;
-  top: -4px;
-  padding: 0;
-  margin: 0;
-}
-.menu ul li {
-  display: inline-block;
-  padding: 0 20px 0 20px;
-  margin: 0;
-}
-.menu ul li a {
-  text-decoration: none;
+.luxbar-menu {
+  background-color: #252525 !important;
   text-transform: uppercase;
-  color: #ffffff;
-  width: 135px;
-  display: block;
-  padding: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #ffffff;
-  transition: 1s;
+  z-index: 1;
 }
-.menu ul li a:hover {
-  background: #a60c1e;
-  text-shadow: 0 0 4px #ffffff;
-  transition: 0.5s;
-  z-index: 100;
-  color: #ffffff;
-  box-shadow: 0px 5px 15px 4px rgba(0, 0, 0, 0.62);
+.luxbar-menu a:hover {
+  color: #c60f24;
 }
 
 #intro h1 {
@@ -305,7 +280,7 @@ header img:hover {
   display: flex;
   position: relative;
   padding: 5px 0 0;
-  margin: 3rem auto;
+  margin: 0 auto 3rem;
   width: 700px;
   justify-content: center;
   background: #262626;
@@ -338,6 +313,11 @@ header img:hover {
   margin: 0;
   padding: 0;
   justify-content: center;
+}
+@media only screen and (max-width: 765px) {
+  .testmenucontainer #testmenu ul {
+    flex-direction: column;
+  }
 }
 .testmenucontainer #testmenu ul a:hover {
   text-shadow: 0 0 5px #ffffff;
@@ -539,7 +519,7 @@ header img:hover {
   margin-top: 90px;
   text-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.gallerystart h2 .meguh1 {
+.gallerystart h2 .meguh2 {
   color: #c60f24;
   letter-spacing: 7px;
   text-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
@@ -634,6 +614,7 @@ header img:hover {
   box-shadow: none;
 }
 
+/* Accordion body */
 .accordion-body {
   background: #262626;
   height: auto;
@@ -653,14 +634,23 @@ header img:hover {
   font-family: "Montserrat", sans-serif;
   color: #ce9f6b;
   padding-top: 20px;
-  list-style-image: url("../../images/iconolistas.png");
+  word-wrap: break-word;
+  /* list-style-image: url("../../images/iconolistas.png"); */
+}
+.accordion-body ol li img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 10px;
 }
 .accordion-body ul li {
   font-size: large;
   font-family: "Montserrat", sans-serif;
   color: #ce9f6b;
   padding-top: 20px;
-  list-style-image: url("../../images/iconolistas.png");
+  word-wrap: break-word;
+  /* list-style-image: url("../../images/iconolistas.png"); */
 }
 
 .accordion-item {
@@ -682,6 +672,14 @@ header img:hover {
 .card {
   background-color: #262626 !important;
   color: #ce9f6b;
+  margin-bottom: 0 !important;
+}
+.card .card-body {
+  box-shadow: 0 2px #ce9f6b inset;
+  padding: 1rem 5px !important;
+}
+.card .cuerpocard {
+  box-shadow: 0 5px #c60f24 inset;
 }
 
 .card-link {
@@ -695,6 +693,11 @@ header img:hover {
 .conteinerfunciones {
   margin: 5rem;
   user-select: none;
+}
+@media only screen and (max-width: 601px) {
+  .conteinerfunciones {
+    margin: 1rem;
+  }
 }
 .conteinerfunciones .separatorfunc {
   border-bottom: 3px solid red;

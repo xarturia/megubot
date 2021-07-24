@@ -19,7 +19,8 @@ $accordion-border-color: $bordecolor !important;
     font-family: 'Montserrat', sans-serif;
     color: nth($colors, 8);
     padding-top: 20px;
-    list-style-image: url("../../images/iconolistas.png");
+    word-wrap: break-word;
+    /* list-style-image: url("../../images/iconolistas.png"); */
 }
 
 
@@ -56,7 +57,7 @@ $accordion-border-color: $bordecolor !important;
 }
 
 
-
+/* Accordion body */
 .accordion-body {
     background: $accordion-color;
     height: auto;
@@ -73,6 +74,13 @@ $accordion-border-color: $bordecolor !important;
 
         li {
             @include accordionlist();
+            img {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                margin: 0 10px;
+            }
         }
     }
 
