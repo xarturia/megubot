@@ -8,7 +8,15 @@
    .footer {
        padding-bottom: 40px;
    }
-
+   .wavyfooter {
+    @include d(flex);
+    width: 100vw;
+    transition: 1s;
+    user-select: none;
+    @media only screen and (max-width: 265px) {
+        display: none;
+      }
+}
    .logo {
        // Media query //
        @include logoquery(phone);
