@@ -20,6 +20,7 @@ $card-bg: $fondocard;
     margin-bottom: 0 !important;
     .card-body {
         box-shadow: 0 2px nth($colors, 8) inset;
+        padding: 1rem 5px !important;
     }
     .cuerpocard {
         box-shadow: 0 5px nth($colors, 1) inset;
@@ -38,7 +39,9 @@ $card-bg: $fondocard;
 .conteinerfunciones {
     margin: 5rem;
     user-select: none;
-
+    @media only screen and (max-width: 601px) {
+        margin: 1rem;
+      }
     .separatorfunc {
         border-bottom: 3px solid red;
         margin-bottom: 1rem;
