@@ -280,7 +280,7 @@ header img:hover {
   display: flex;
   position: relative;
   padding: 5px 0 0;
-  margin: 3rem auto;
+  margin: 0 auto 3rem;
   width: 700px;
   justify-content: center;
   background: #262626;
@@ -313,6 +313,11 @@ header img:hover {
   margin: 0;
   padding: 0;
   justify-content: center;
+}
+@media only screen and (max-width: 765px) {
+  .testmenucontainer #testmenu ul {
+    flex-direction: column;
+  }
 }
 .testmenucontainer #testmenu ul a:hover {
   text-shadow: 0 0 5px #ffffff;
@@ -609,6 +614,7 @@ header img:hover {
   box-shadow: none;
 }
 
+/* Accordion body */
 .accordion-body {
   background: #262626;
   height: auto;
@@ -628,14 +634,23 @@ header img:hover {
   font-family: "Montserrat", sans-serif;
   color: #ce9f6b;
   padding-top: 20px;
-  list-style-image: url("../../images/iconolistas.png");
+  word-wrap: break-word;
+  /* list-style-image: url("../../images/iconolistas.png"); */
+}
+.accordion-body ol li img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 10px;
 }
 .accordion-body ul li {
   font-size: large;
   font-family: "Montserrat", sans-serif;
   color: #ce9f6b;
   padding-top: 20px;
-  list-style-image: url("../../images/iconolistas.png");
+  word-wrap: break-word;
+  /* list-style-image: url("../../images/iconolistas.png"); */
 }
 
 .accordion-item {
@@ -657,6 +672,13 @@ header img:hover {
 .card {
   background-color: #262626 !important;
   color: #ce9f6b;
+  margin-bottom: 0 !important;
+}
+.card .card-body {
+  box-shadow: 0 2px #ce9f6b inset;
+}
+.card .cuerpocard {
+  box-shadow: 0 5px #c60f24 inset;
 }
 
 .card-link {

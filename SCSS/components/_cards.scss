@@ -17,6 +17,13 @@ $card-bg: $fondocard;
 .card {
     background-color: $card-bg;
     color: nth($colors, 8);
+    margin-bottom: 0 !important;
+    .card-body {
+        box-shadow: 0 2px nth($colors, 8) inset;
+    }
+    .cuerpocard {
+        box-shadow: 0 5px nth($colors, 1) inset;
+    }
 }
 
 .card-link {
